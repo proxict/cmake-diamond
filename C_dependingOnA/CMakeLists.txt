@@ -9,7 +9,7 @@ target_include_directories(clib
     PUBLIC include
 )
 
-add_subdirectory(external/A)
+add_subdirectory(../A aDir)
 
 target_link_libraries(clib
     PUBLIC alib

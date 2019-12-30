@@ -9,7 +9,7 @@ target_include_directories(blib
     PUBLIC include
 )
 
-add_subdirectory(external/A)
+add_subdirectory(../A aDir)
 
 target_link_libraries(blib
     PUBLIC alib

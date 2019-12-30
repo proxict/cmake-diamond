@@ -9,8 +9,8 @@ target_include_directories(program_d
     PRIVATE include
 )
 
-add_subdirectory(external/B)
-add_subdirectory(external/C)
+add_subdirectory(../B_dependingOnA bDir)
+add_subdirectory(../C_dependingOnA cDir)
 
 target_link_libraries(program_d
     PRIVATE blib
